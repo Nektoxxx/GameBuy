@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GameBuy</title>
+</head>
+
+<body>
+    <section class="modal__container" id="openModal_Authoriz">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Авторизация</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Nickname *</div>
+                <input type="text" class="modal__input" placeholder="user_277">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Почта *</div>
+                <input type="text" class="modal__input" placeholder="email@mail.com">
+            </div>
+            <input type="submit" class="btn" value="Войти">
+            <a href="#openModal_Registr" class="btn buttons__btn_right"><span>Регистрация</span> </a>
+        </form>
+    </section>
+
+    <section class="modal__container" id="openModal_Registr">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Регистрация</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Nickname *</div>
+                <input type="text" class="modal__input" placeholder="user_277">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Почта *</div>
+                <input type="text" class="modal__input" placeholder="email@mail.com">
+            </div>
+            <input type="submit" class="btn" value="Зарегистрироваться">
+            <a href="#openModal_Authoriz" class="btn buttons__btn_right"><span>Авторизация</span> </a>
+        </form>
+    </section>
+
+    <section class="modal__container" id="openModalProduct">
+        <form class="modal__collaboration modal">
+            <div class="modal_header">
+                <h2>Подать заявку</h2>
+                <a class="modal_close" href="#">X</a>
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Имя и Фамилия *</div>
+                <input type="text" class="modal__input" placeholder="Иванов Иван">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка для связи *</div>
+                <input type="text" class="modal__input" placeholder="https://web.telegram.org/a/#00000000">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Ссылка на канал *</div>
+                <input type="text" class="modal__input" placeholder="https://www.youtube.com/@MrBeast">
+            </div>
+            <div class="modal__item">
+                <div class="modal__text">Комментарий *</div>
+                <textarea class="modal__input modal__text" cols="30" rows="10">Текст...</textarea>
+            </div>
+            <input type="submit" class="btn">
+        </form>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="logo">
+                    <a href="index.html"><span>Донат</span>.Оф</a>
+                </div>
+                <nav class="links">
+                    <a class="link" href="">
+                        Главная
+                        <span class="line"></span>
+                    </a>
+                    <a class="link" href="catalog.html">
+                        Каталог
+                    </a>
+                    <a class="link" href="#">
+                        О нас
+                    </a>
+                    <a class="link" href="reviews.html">
+                        Отзывы
+                    </a>
+                    <a href="#openModal_Authoriz"><button class="btn">Войти</button></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__body">
+
+        <section class="banner">
+            <div class="container">
+                <div class="banner__body">
+                    <h2 class="banner__title">Самый надёжный сайт для покупки доната в игре<br>
+                        <span class="banner__span"> Arena Breakout</span>
+                    </h2>
+                    <p class="banner__text">
+                        Здесь вы можете купить всё, что вам нужно.<br>
+                        Мы работаем только с официальным магазином. <br>
+                        Кроме того, для своих клиентов, <br>
+                        мы предлагаем самые низкие цены, <br>
+                        быструю доставку и доступные способы оплаты.
+                    </p>
+                    <div class="banner__buttons buttons">
+                        <button class="buttons__btn btn">Каталог</button>
+                        <button class="buttons__btn btn buttons__btn_right">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__body">
+                    <h2>Отзывы</h2>
+                    <div class="reviews__items">
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                        <div class="reviews__item item">
+                            <div class="review__header">
+                                <div class="review__profile">
+                                    <img class="review__profile__img" src="img/profile/profile_icon.png" alt="#">
+                                    <p>MyLogin</p>
+                                </div>
+                                <div class="img"><img src="img/like.png" alt="#"></div>
+                            </div>
+                            <p>
+                                Данный сайт является венцом творения индустрии. Он содержит в себе самые
+                                полезные функции, а также один из самых прогрессивных дизайнов в этом мире.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collaboration">
+            <div class="container">
+                <div class="collaboration__body">
+                    <div class="collaboration__content">
+                        <h2>
+                            Вы <span>блогер</span> или <span>админ</span> сообщества?
+                        </h2>
+
+                        <p class="banner__text">
+                            Начните зарабатывать рекламируя наш проект. <br>
+                            Подайте заявку и мы свяжемся с вами, <br>
+                            чтобы обсудить условия сотрудничества.
+                        </p>
+
+                        <div class="collaboration buttons">
+                            <button class="buttons__btn btn">Подать заявку</button>
+                            <button class="buttons__btn btn buttons__btn_right">Регистрация</button>
+                        </div>
+
+                    </div>
+                    <div class="collaboration__img">
+                        <img class="collaboration__img" src="img/collaboration.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="logo">
+                    <a href="index.html"><span>Донат</span>.Оф</a>
+                </div>
+                <div class="footer__text__content">
+                    <p class="footer__title">
+                        Самый надёжный сайт для покупки доната в игре Arena Breakout
+                    </p>
+
+                    <p class="footer__text">
+                        Здесь вы можете купить всё, что вам нужно, не беспокоясь о безопасности аккаунта.<br>
+                        Мы работаем только с официальным магазином. <br>
+                        Кроме того, для своих клиентов, мы предлагаем самые низкие цены, <br>
+                        быструю доставку и доступные способы оплаты.
+                    </p>
+
+
+                </div>
+                <div class="footer__navs">
+                    <div class="footer__title">Покупателям</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__text">О нас</a>
+                        <a href="#" class="footer__text">Отзывы</a>
+                        <a href="#" class="footer__text">Поддержка</a>
+                    </nav>
+                </div>
+                <div class="footer__navs">
+                    <div class="footer__title">Сотрудничество</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__text">Сотрудничество</a>
+                        <a href="#" class="footer__text">Отзывы</a>
+                        <a href="#" class="footer__text">Регистрация</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
